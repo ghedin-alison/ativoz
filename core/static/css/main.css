@@ -778,6 +778,12 @@ hr {
   background: #34363a;
 }
 
+.ativoz-img {
+    width: 1200px;
+    height: 600px;
+
+}
+
 /* Team Item */
 .team-item:hover {
   box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
