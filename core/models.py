@@ -28,7 +28,7 @@ class Team(Base):
     name = models.CharField('Name', max_length=100)
     bio = models.TextField('Bio', max_length=140)
     image = StdImageField('Imagem', upload_to=get_file_path,
-                          variations={'thumb': {'width': 480, 'height': 480, 'crop': True}})
+                          variations={'thumb': {'width': 350, 'height': 350, 'crop': True}})
     facebook = models.CharField('Facebook', max_length=100, default='#')
     instagram = models.CharField('Instagram', max_length=100, default='#')
     twitter = models.CharField('Twitter', max_length=100, default='#')
@@ -44,7 +44,7 @@ class Team(Base):
 class Testemonial(Base):
     nome = models.CharField('Nome', max_length=100)
     image = StdImageField('Imagem', upload_to=get_file_path,
-                          variations={'thumb': {'width': 48, 'height': 48, 'crop': True}})
+                          variations={'thumb': {'width': 120, 'height': 120, 'crop': True}})
     bairro = models.CharField('bairro', max_length=50)
     texto = models.TextField('Depoimento', max_length=500)
 

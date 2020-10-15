@@ -25,11 +25,11 @@
 
   </head>
   <body>
-    <nav class="nav nav-pills nav-justified">
-      <a class="nav-link active" href="{% url 'index' %}">Home</a>
-      <a class="nav-link" href="#contact">Contato</a>
-      <a class="nav-link" href="#">Participe</a>
-      <a class="nav-link" href="https://votolegal.com.br/luanaalves">Doe</a>
+    <nav class="navbar navbar-expand navbar-light bg-gray">
+      <a class="nav-link" href="{% url 'index' %}" style="color: red; font-size: 25px;"><button class="btn btn-common"><strong>Home</strong></button></a>
+      <a class="nav-link" href="#contact" style="color: red; font-size: 25px"><button class="btn btn-common"><strong>Contato</strong></button></a>
+      <a class="nav-link" href="#team" style="color: red;  font-size: 25px"><button class="btn btn-common"><strong>Co-candidates</strong></button></a>
+      <a class="nav-link" href="https://votolegal.com.br/luanaalves" style="color: red; font-size: 25px"><button class="btn btn-common"><strong>Doe</strong></button></a>
     </nav>
     {% block content %}
     {% endblock %}
