@@ -41,3 +41,16 @@ class Team(Base):
         return self.name
 
 
+class Testemonial(Base):
+    nome = models.CharField('Nome', max_length=100)
+    image = StdImageField('Imagem', upload_to=get_file_path,
+                          variations={'thumb': {'width': 48, 'height': 48, 'crop': True}})
+    bairro = models.CharField('bairro', max_length=50)
+    texto = models.TextField('Depoimento', max_length=500)
+
+    class Meta:
+        verbose_name = 'Depoimento'
+        verbose_name_plural = 'Depoimentos'
+
+    def __str__(self):
+        return self.nome

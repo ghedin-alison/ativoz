@@ -1,8 +1,8 @@
-from django.views.generic import FormView
+from django.views.generic import FormView, TemplateView
 from django.urls import reverse_lazy
 from django.contrib import messages
 
-from .models import Team
+from .models import Team, Testemonial
 from .forms import ContatoForm
 
 
@@ -17,6 +17,7 @@ class IndexView(FormView):
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
         context['team'] = Team.objects.order_by('?').all()
+        context['testemonial'] = Testemonial.objects.all()
         return context
 
     # Se email enviado com sucesso, manda uma mensagem e retorna ao formulario/pagina principal
@@ -29,3 +30,7 @@ class IndexView(FormView):
     def form_invalid(self, form, *args, **kwargs):
         messages.error(self.request, 'Erro ao enviar e-mail')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
+
+
+class SaibaView(TemplateView):
+    template_name = 'saiba.html'

@@ -20,7 +20,7 @@ class ContatoForm(forms.Form):
             subject=assunto,
             body=content,
             from_email='contato@fusion.com.br',
-            to=['contatofusion@gmail.com', ],
+            to=['mandatacoletivaativoz@gmail.com', ],
             headers={'Reply-To': email}
         )
         mail.send()
