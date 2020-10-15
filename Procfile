@@ -1,0 +1,1 @@
+web: gunicorn ativoz.wsgi --log-file -
