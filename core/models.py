@@ -1,6 +1,7 @@
+import uuid
+
 from django.db import models
 from stdimage.models import StdImageField
-import uuid
 
 
 # uuid.uuid4() - gera um nome aleatório, substituindo no nome recebido. Manteremos a extensão
