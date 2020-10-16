@@ -1,1 +1,1 @@
-web: gunicorn ativoz:app --log-file -
+web: gunicorn wsgi:ativoz --log-file -
