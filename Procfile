@@ -1,1 +1,0 @@
-web: gunicorn ativoz.py --log-file -
