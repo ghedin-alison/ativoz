@@ -1,1 +1,1 @@
-web: gunicorn ativoz.wsgi --log-file -
+web: gunicorn ativoz_wsgi.py --log-file -
