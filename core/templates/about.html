@@ -1,7 +1,7 @@
 {% load static %}
     <!-- About Section start -->
     <div class="about-area section-padding bg-gray">
-      <div class="container">
+    <div id="third">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-xs-12 info">
             <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
@@ -20,7 +20,8 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-            <img class="container-fluid" src="{% static 'img/about/ativoz_wpp.jpeg' %}" alt="" style="width: 600px; height:600px;">
+          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+            <img src="{% static 'img/about/ativoz1.jpeg' %}" alt="Imagem">
           </div>
         </div>
       </div>
@@ -34,5 +35,5 @@
           {% endfor %}
         {% endif %}
       </div>
-    </div>
+<!--    </div>-->
     <!-- About Section End -->
