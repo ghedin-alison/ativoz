@@ -1416,3 +1416,11 @@ textarea {
   background: #CE332A;
 }
 
+
+/* alteração ativoz*/
+#third{
+     background: url("/static/img/about/manifesto_ativoz.png") 50% 0 no-repeat fixed;
+     color: white;
+     height: 650px;
+     padding: 100px 0 0 0;
+     }
