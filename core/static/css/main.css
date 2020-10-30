@@ -754,7 +754,7 @@ hr {
   min-height: 650px;
   position: relative;
   overflow: hidden;
-  padding: 180px 0 80px;
+/*  padding: 180px 0 80px; */
 }
 
 #hero-area .contents .head-title {
@@ -762,7 +762,7 @@ hr {
   font-size: 42px;
   font-weight: 700;
   line-height: 60px;
-  margin-bottom: 10px;
+/*  margin-bottom: 10px;*/
 }
 
 #hero-area .contents .header-button {

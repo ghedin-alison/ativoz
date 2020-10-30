@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '4y9af46c22gu@*^nfq$k78v@sn!)$ncl0gur@&l0xu98j!fz^l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -79,13 +80,26 @@ WSGI_APPLICATION = 'ativoz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'candidatura',
+        'USER': 'ativoz',
+        'PASSWORD': 'mandatacoletiva',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
