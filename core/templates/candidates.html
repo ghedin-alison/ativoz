@@ -10,11 +10,11 @@
           {% for t in team %}
           <div class="card team-item wow fadeInRight" data-wow-delay="0.2s" style="width: 10rem;">
             <img class="card-img-top" src="{{ t.image.thumb.url }}" alt="{{ t.name }}">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">{{ t.name }}</h5>
               <p class="card-text">{{ t.bio }}</p>
-              <div class="card-footer">
-                  <ul class="social-icons">
+              <div class="card-footer mt-auto">
+                  <ul class="social-icons d-flex justify-content-between">
                       <li><a href="{{ t.facebook }}"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
                       <li><a href="{{ t.twitter }}"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
                       <li><a href="{{ t.instagram }}"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>

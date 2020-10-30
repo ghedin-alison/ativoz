@@ -45,7 +45,7 @@ class Team(Base):
 class Testemonial(Base):
     nome = models.CharField('Nome', max_length=100)
     image = StdImageField('Imagem', upload_to=get_file_path,
-                          variations={'thumb': {'width': 120, 'height': 120, 'crop': True}})
+                          variations={'thumb': {'width': 350, 'height': 350, 'crop': True}})
     bairro = models.CharField('bairro', max_length=50)
     texto = models.TextField('Depoimento', max_length=500)
 
