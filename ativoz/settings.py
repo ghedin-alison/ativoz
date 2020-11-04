@@ -168,7 +168,7 @@ CSRF_COOKIE_HTTPONLY = True
 X_FRAME_OPTIONS = 'DENY'
 
 # habilitar antes de publicar(sempre direciona pra https, toda transmissao sera criptografada)
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 
 
 
