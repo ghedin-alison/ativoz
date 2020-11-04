@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '4y9af46c22gu@*^nfq$k78v@sn!)$ncl0gur@&l0xu98j!fz^l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -156,5 +156,20 @@ EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'fusion'
 DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 """
+
+# Recursos extra de segurança django
+SECURE_HSTS_SECONDS = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_BROWSER_XSS_FILTER = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
+X_FRAME_OPTIONS = 'DENY'
+
+# habilitar antes de publicar(sempre direciona pra https, toda transmissao sera criptografada)
+# SECURE_SSL_REDIRECT = True
+
+
 
 LOGOUT_REDIRECT_URL = 'index'
